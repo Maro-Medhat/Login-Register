@@ -1,0 +1,52 @@
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left , .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+input {
+    margin: 10px 0;
+}
+
+
+.left_slider, .right_slider {
+    height: 100vh;
+    width: 50vw;
+}
+
+.right_slider {
+    background-color: blue;
+    position: absolute;
+    transition: transform 1000ms ease;
+    transform: translateX(25vw);
+}
+
+.left_slider {
+    background-color: green;
+    position: absolute;
+    transition: transform 1000ms ease;
+    transform: translateX(-25vw);
+}
+
+.hide_blue {
+    transition: transform 1000ms ease;
+    transform: translateX(75vw);
+}
+
+.hide_green {
+    transition: transform 1000ms ease;
+    transform: translateX(-75vw);
+}

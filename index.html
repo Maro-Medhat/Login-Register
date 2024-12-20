@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main">
+      <!-- Green -->
+      <div class="left_slider hide_green"></div>  
+      
+      <!-- Blue -->        
+      <div class="right_slider"></div>           
+
+    <div class="left container">
+      <h2>Sign Up</h2>
+      <form action="#" action="POST">
+        <input type="email" name="email" placeholder="email">
+        <br>
+        <input type="password" name="password" placeholder="password">
+        <br>
+        <input type="submit" value="Register">
+        <button class="login-btn" onclick="hide_blue()">Login</button>
+      </form>
+    </div>
+
+    <div class="right container">
+      <h2>Login</h2>
+      <form action="#" action="POST">
+        <input type="email" name="email" placeholder="email">
+        <br>
+        <input type="password" name="password" placeholder="password">
+        <br>
+        <input type="submit" value="Login">
+        <button class="register-btn" onclick="hide_green()">Register</button>
+      </form>
+    </div>
+    
+  </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/test.js"></script>
+</html>
