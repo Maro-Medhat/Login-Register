@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background: #f2f2f2;
+    background: #fff;
 }
 h2{
     display: flex;
@@ -14,34 +14,41 @@ h2{
     height: 100vh;
 }
 
+.header{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
 .wrapper{
-    /* padding: 5; */
-    width: 350px;
-    background: #fff;
+    
+    width: 280px;
     border-radius: 15px;
-    box-shadow: rgba(0, 2, 4, 0.3) 0px 0px 0px 3px;
   }
 
-.btnRegister{
-    margin-right: 25px;
-    margin-left: 15px;
+
+
+.btnRegisterleft{
+    margin-right: 15px;
 }
 
 .btnLogin{
     margin-right: 15px;
-    margin-left: 25px;
+    
 }
 .left , .right{
     display: flex;
     flex-direction: column;
+    height: 35vh;
+}
+.form{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 40vh;
+    align-items: start;
 }
 
 input {
-    /* border: 1px solid black; */
-    padding: 5px 15px;
+    padding: 5px 25px;
     margin: 10px 0;
 }
 
@@ -54,23 +61,23 @@ input {
 .right_slider {
     background: linear-gradient(90deg, rgba(1,8,47,1) 0%, rgba(0,45,98,1) 50%, rgba(0,75,143,1) 100%); 
     position: absolute;
-    transition: transform 1000ms ease;
+    transition: transform 750ms ease;
     transform: translateX(25vw);
 }
 
 .left_slider {
     background: linear-gradient(90deg, rgba(4,168,167,1) 0%, rgba(40,174,150,1) 50%, rgba(73,176,128,1) 100%);
     position: absolute;
-    transition: transform 1000ms ease;
+    transition: transform 750ms ease;
     transform: translateX(-25vw);
 }
 
 .hide_blue {
-    transition: transform 1000ms ease;
+    transition: transform 750ms ease;
     transform: translateX(75vw);
 }
 
 .hide_green {
-    transition: transform 1000ms ease;
+    transition: transform 750ms ease;
     transform: translateX(-75vw);
 }
